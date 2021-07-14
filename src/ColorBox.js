@@ -31,6 +31,17 @@ const styles = {
   colorName: {
     color: isDarkColor,
   },
+  boxContent: {
+    position: 'absolute',
+    width: '90%',
+    left: '0px',
+    bottom: '0px',
+    padding: '10px',
+    color: 'black',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    fontSize: '12px',
+  },
   seeMore: {
     color: isLightColor,
     background: 'rgba(255, 255, 255, 0.3)',
@@ -43,6 +54,21 @@ const styles = {
     textAlign: 'center',
     lineHeight: '30px',
     textTransform: 'uppercase',
+  },
+  copyOverlay: {
+    opacity: '0',
+    zIndex: '0',
+    width: '100%',
+    height: '100%',
+    transition: 'transform 0.6s ease-in-out',
+    transform: 'scale(0.1)',
+
+    '&.show': {
+      opacity: '1',
+      transform: 'scale(50)',
+      zIndex: '10',
+      position: 'absolute',
+    },
   },
   copyButton: {
     color: isLightColor,
@@ -63,6 +89,7 @@ const styles = {
     border: 'none',
     textDecoration: 'none',
     opacity: '0',
+    cursor: 'pointer',
   },
   copyMsg: {
     color: isDarkColor,
@@ -132,14 +159,14 @@ class ColorBox extends Component {
         <div style={{ background }} className={classes.ColorBox}>
           <div
             style={{ background }}
-            className={`copy-overlay ${copied && 'show'}`}
+            className={`${classes.copyOverlay} ${copied && 'show'}`}
           />
           <div className={`${classes.copyMsg} ${copied && 'show'}`}>
             <h1>copied!</h1>
             <p className={classes.copyText}>{background}</p>
           </div>
-          <div className='copy-container'>
-            <div className='box-content'>
+          <div>
+            <div className={classes.boxContent}>
               <span className={classes.colorName}>{name}</span>
             </div>
             <button className={classes.copyButton}>Copy</button>
