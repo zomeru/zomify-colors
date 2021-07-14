@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/styles';
 const styles = {
   root: {
     backgroundColor: 'blue',
-    height: '100%',
+    height: '150%',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
@@ -22,7 +22,7 @@ const styles = {
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
-    color: 'white',
+    // color: 'white',
   },
   palettes: {
     boxSizing: 'border-box',
@@ -48,7 +48,6 @@ class PaletteList extends Component {
             ))}
           </div>
         </div>
-        <MiniPalette />
       </div>
     );
   }
