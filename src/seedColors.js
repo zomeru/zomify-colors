@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
-    paletteName: 'Material UI Colors',
-    id: 'material-ui-colors',
+    paletteName: 'Zomerify Colors',
+    id: 'zomerify-colors',
     emoji: '🎨',
     colors: [
       { name: 'red', color: '#F44336' },
@@ -27,8 +27,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors v1',
-    id: 'flat-ui-colors-v1',
+    paletteName: 'Zomerify Colors v2',
+    id: 'zomerify-colors-v2',
     emoji: '🤙',
     colors: [
       { name: 'Turquoise', color: '#1abc9c' },
@@ -54,8 +54,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors Dutch',
-    id: 'flat-ui-colors-dutch',
+    paletteName: 'Zomerify Colors Dutch',
+    id: 'zomerify-colors-dutch',
     emoji: '🇳🇱',
     colors: [
       { name: 'Sunflower', color: '#FFC312' },
@@ -81,8 +81,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors American',
-    id: 'flat-ui-colors-american',
+    paletteName: 'Zomerify Colors American',
+    id: 'zomerify-colors-american',
     emoji: '🇺🇸',
     colors: [
       { name: 'LightGreenishBlue', color: '#55efc4' },
@@ -108,8 +108,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors Aussie',
-    id: 'flat-ui-colors-aussie',
+    paletteName: 'Zomerify Colors Aussie',
+    id: 'zomerify-colors-aussie',
     emoji: '🇦🇺',
     colors: [
       { name: 'Beekeeper', color: '#f6e58d' },
@@ -135,8 +135,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors British',
-    id: 'flat-ui-colors-british',
+    paletteName: 'Zomerify Colors British',
+    id: 'zomerify-colors-british',
     emoji: '🇬🇧',
     colors: [
       { name: 'ProtossPylon', color: '#00a8ff' },
@@ -162,8 +162,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors Spanish',
-    id: 'flat-ui-colors-spanish',
+    paletteName: 'Zomerify Colors Spanish',
+    id: 'zomerify-colors-spanish',
     emoji: '🇪🇸',
     colors: [
       { name: 'JacksonsPurple', color: '#40407a' },
@@ -189,8 +189,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors Indian',
-    id: 'flat-ui-colors-indian',
+    paletteName: 'Zomerify Colors Indian',
+    id: 'zomerify-colors-indian',
     emoji: '🇮🇳',
     colors: [
       { name: 'OrchidOrange', color: '#FEA47F' },
@@ -216,8 +216,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Flat UI Colors French',
-    id: 'flat-ui-colors-french',
+    paletteName: 'Zomerify Colors French',
+    id: 'zomerify-colors-french',
     emoji: '🇫🇷',
     colors: [
       { name: 'FlatFlesh', color: '#fad390' },
