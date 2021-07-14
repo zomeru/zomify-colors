@@ -18,6 +18,7 @@ const styles = {
     alignItems: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
+    marginBottom: '3rem',
   },
   nav: {
     display: 'flex',
