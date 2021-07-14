@@ -5,14 +5,15 @@ import { withStyles } from '@material-ui/styles';
 
 const styles = {
   root: {
-    backgroundColor: 'blue',
-    height: '150%',
+    backgroundColor: '#25aaa3',
+    height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
   },
   container: {
     width: '70%',
+    height: '80%',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
@@ -22,14 +23,18 @@ const styles = {
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
-    // color: 'white',
+    color: 'white',
+
+    '& a': {
+      color: 'white',
+    },
   },
   palettes: {
     boxSizing: 'border-box',
     width: '100%',
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 30%)',
-    gridGap: '5%',
+    gridGap: '1.5rem',
   },
 };
 class PaletteList extends Component {
@@ -48,7 +53,10 @@ class PaletteList extends Component {
           </nav>
           <div className={classes.palettes}>
             {palettes.map(palette => (
-              <Link to={`/palette/${palette.id}`}>
+              <Link
+                to={`/palette/${palette.id}`}
+                style={{ textDecoration: 'none' }}
+              >
                 <MiniPalette
                   {...palette}
                   handleClick={() => this.goToPalette(palette.id)}
