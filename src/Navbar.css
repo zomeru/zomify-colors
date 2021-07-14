@@ -25,6 +25,7 @@
   width: 340px;
   margin: 0 10px;
   display: inline-block;
+  margin-left: 1.5rem;
 }
 
 .rc-slider-track {
