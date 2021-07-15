@@ -55,9 +55,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors Dutch',
-    id: 'zomerify-colors-dutch',
-    emoji: '🇳🇱',
+    paletteName: 'Zomerify Colors v3',
+    id: 'zomerify-colors-v3',
+    emoji: '💥',
     colors: [
       { name: 'Sunflower', color: '#FFC312' },
       { name: 'Energos', color: '#C4E538' },
@@ -82,9 +82,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors American',
-    id: 'zomerify-colors-american',
-    emoji: '🇺🇸',
+    paletteName: 'Zomerify Colors v4',
+    id: 'zomerify-colors-v4',
+    emoji: '💖',
     colors: [
       { name: 'LightGreenishBlue', color: '#55efc4' },
       { name: 'FadedPoster', color: '#81ecec' },
@@ -109,9 +109,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors Aussie',
-    id: 'zomerify-colors-aussie',
-    emoji: '🇦🇺',
+    paletteName: 'Zomerify Colors v5',
+    id: 'zomerify-colors-v5',
+    emoji: '💯',
     colors: [
       { name: 'Beekeeper', color: '#f6e58d' },
       { name: 'SpicedNectarine', color: '#ffbe76' },
@@ -136,9 +136,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors British',
-    id: 'zomerify-colors-british',
-    emoji: '🇬🇧',
+    paletteName: 'Zomerify Colors v6',
+    id: 'zomerify-colors-v6',
+    emoji: '😍',
     colors: [
       { name: 'ProtossPylon', color: '#00a8ff' },
       { name: 'Periwinkle', color: '#9c88ff' },
@@ -163,9 +163,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors Spanish',
-    id: 'zomerify-colors-spanish',
-    emoji: '🇪🇸',
+    paletteName: 'Zomerify Colors v7',
+    id: 'zomerify-colors-v7',
+    emoji: '🎉',
     colors: [
       { name: 'JacksonsPurple', color: '#40407a' },
       { name: 'C64Purple', color: '#706fd3' },
@@ -190,9 +190,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors Indian',
-    id: 'zomerify-colors-indian',
-    emoji: '🇮🇳',
+    paletteName: 'Zomerify Colors v8',
+    id: 'zomerify-colors-v8',
+    emoji: '📌',
     colors: [
       { name: 'OrchidOrange', color: '#FEA47F' },
       { name: 'SpiroDiscoBall', color: '#25CCF7' },
@@ -217,9 +217,9 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors French',
-    id: 'zomerify-colors-french',
-    emoji: '🇫🇷',
+    paletteName: 'Zomerify Colors v9',
+    id: 'zomerify-colors-v9',
+    emoji: '🥨',
     colors: [
       { name: 'FlatFlesh', color: '#fad390' },
       { name: 'MelonMelody', color: '#f8c291' },
