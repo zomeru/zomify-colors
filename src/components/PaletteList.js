@@ -17,6 +17,9 @@ class PaletteList extends Component {
         <div className={classes.container}>
           <nav className={classes.nav}>
             <h1>Zomerify Colors</h1>
+            <div className={classes.createButton}>
+              <Link to='/palette/new'>Create New Palette</Link>
+            </div>
           </nav>
           <div className={classes.palettes}>
             {palettes.map(palette => (
