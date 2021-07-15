@@ -82,7 +82,7 @@ const NewPaletteForm = props => {
   const [open, setOpen] = useState(true);
   const [currentColor, setCurrentColor] = useState('teal');
   const [newName, setNewName] = useState('');
-  const [colors, setColors] = useState([]);
+  const [colors, setColors] = useState([{ color: 'red', name: 'red' }]);
 
   useEffect(() => {
     ValidatorForm.addValidationRule('isColorNameUnique', value => {
@@ -91,7 +91,7 @@ const NewPaletteForm = props => {
     ValidatorForm.addValidationRule('isColorUnique', value => {
       colors.every(({ color }) => color !== currentColor);
     });
-  }, []);
+  }, [colors, currentColor]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
