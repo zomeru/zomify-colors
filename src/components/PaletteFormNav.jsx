@@ -11,7 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 
-const drawerWidth = 300;
+const drawerWidth = 350;
 
 const useStyles = makeStyles(theme => ({
   root: { display: 'flex' },
@@ -35,7 +35,9 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  navBtns: {},
+  navBtns: {
+    display: 'flex',
+  },
 }));
 
 const PaletteFormNav = ({ open, palettes, handleDrawerOpen, handleSubmit }) => {
