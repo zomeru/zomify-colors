@@ -12,29 +12,13 @@ import Button from '@material-ui/core/Button';
 import DraggableColorList from './DraggableColorList';
 import { arrayMove } from 'react-sortable-hoc';
 
-const drawerWidth = 350;
+const drawerWidth = 300;
 
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
   },
-  appBar: {
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-  },
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
+
   hide: {
     display: 'none',
   },
@@ -74,7 +58,7 @@ const useStyles = makeStyles(theme => ({
 
 const NewPaletteForm = ({ palettes, savePalette, history }) => {
   const classes = useStyles();
-  //const theme = useTheme();
+  const theme = useTheme();
   const [open, setOpen] = useState(true);
   const [colors, setColors] = useState(palettes[0].colors);
 
@@ -128,7 +112,7 @@ const NewPaletteForm = ({ palettes, savePalette, history }) => {
     <div className={classes.root}>
       <PaletteFormNav
         open={open}
-        classes={classes}
+        //classes={classes}
         palettes={palettes}
         handleSubmit={handleSubmit}
         handleDrawerOpen={handleDrawerOpen}
