@@ -14,7 +14,6 @@ import Button from '@material-ui/core/Button';
 import DraggableColorBox from './DraggableColorBox';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import { ChromePicker } from 'react-color';
-import seedColors from '../configs/seedColors';
 
 const drawerWidth = 350;
 
@@ -86,7 +85,7 @@ const NewPaletteForm = props => {
 
   useEffect(() => {
     ValidatorForm.addValidationRule('isColorNameUnique', value => {
-      colors.every(({ name }) => name.toLowerCase() !== value.toLowerCase());
+      colors.every(({ name }) => name.toLowerCase() === value.toLowerCase());
     });
     ValidatorForm.addValidationRule('isColorUnique', value => {
       colors.every(({ color }) => color !== currentColor);
@@ -116,10 +115,22 @@ const NewPaletteForm = props => {
     setNewName(event.target.value);
   };
 
+  const handleSubmit = () => {
+    let newName = 'New Test Palette';
+    const newPalette = {
+      paletteName: newName,
+      id: newName.toLowerCase().replace(/ /g, '-'),
+      colors: colors,
+    };
+    props.savePalette(newPalette);
+    props.history.push('/');
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
+        color='default'
         position='fixed'
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
@@ -138,6 +149,9 @@ const NewPaletteForm = props => {
           <Typography variant='h6' noWrap>
             Create A Palette
           </Typography>
+          <Button variant='contained' color='primary' onClick={handleSubmit}>
+            Save Palette
+          </Button>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -172,12 +186,12 @@ const NewPaletteForm = props => {
           <TextValidator
             value={newName}
             onChange={textChangeHandler}
-            validators={['required', 'isColorNameUnique', 'isColorUnique']}
-            errorMessages={[
-              'field is required',
-              'Color name already taken',
-              'Color already taken',
-            ]}
+            // validators={['required', 'isColorNameUnique', 'isColorUnique']}
+            // errorMessages={[
+            //   'field is required',
+            //   'Color name already taken',
+            //   'Color already taken',
+            // ]}
           />
           <Button
             variant='contained'
