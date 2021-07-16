@@ -16,7 +16,7 @@ class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
-            <h1>Zomerify Colors</h1>
+            <h1>Zomify Colors</h1>
             <div className={classes.createButton}>
               <Link to='/palette/new'>Create New Palette</Link>
             </div>
