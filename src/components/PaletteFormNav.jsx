@@ -21,13 +21,11 @@ const PaletteFormNav = ({
 
   //TODO! Make the validaiton form to work
   useEffect(() => {
-    ValidatorForm.addValidationRule('isPaletteNameUnique', value => {
-      palettes.every(({ paletteName }) => {
-        console.log(paletteName);
-        console.log(value);
-        return paletteName.toLowerCase() !== value.toLowerCase();
-      });
-    });
+    ValidatorForm.addValidationRule('isPaletteNameUnique', value =>
+      palettes.every(
+        ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
+      )
+    );
   }, [palettes]);
   //TODO! Make the validaiton form to work
 
@@ -64,10 +62,10 @@ const PaletteFormNav = ({
               value={newPaletteName}
               name='newPaletteName'
               onChange={newPaletteNameChangeHandler}
-              validators={['required', 'isPaletteNameUnique']}
+              validators={['isPaletteNameUnique', 'required']}
               errorMessages={[
-                'Enter a palette name',
                 'Please enter a unique Palette name',
+                'Enter a palette name',
               ]}
             ></TextValidator>
             <Button variant='contained' color='primary' type='submit'>
