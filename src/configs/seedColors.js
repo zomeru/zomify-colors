@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
-    paletteName: 'Zomerify Colors',
-    id: 'zomerify-colors',
+    paletteName: 'Zomify Colors',
+    id: 'zomify-colors',
     emoji: '🎨',
     colors: [
       { name: 'red', color: '#F44336' },
@@ -28,8 +28,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v2',
-    id: 'zomerify-colors-v2',
+    paletteName: 'Zomify Colors v2',
+    id: 'zomify-colors-v2',
     emoji: '🤙',
     colors: [
       { name: 'Turquoise', color: '#1abc9c' },
@@ -55,8 +55,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v3',
-    id: 'zomerify-colors-v3',
+    paletteName: 'Zomify Colors v3',
+    id: 'zomify-colors-v3',
     emoji: '💥',
     colors: [
       { name: 'Sunflower', color: '#FFC312' },
@@ -82,8 +82,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v4',
-    id: 'zomerify-colors-v4',
+    paletteName: 'Zomify Colors v4',
+    id: 'zomify-colors-v4',
     emoji: '💖',
     colors: [
       { name: 'LightGreenishBlue', color: '#55efc4' },
@@ -109,8 +109,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v5',
-    id: 'zomerify-colors-v5',
+    paletteName: 'Zomify Colors v5',
+    id: 'zomify-colors-v5',
     emoji: '💯',
     colors: [
       { name: 'Beekeeper', color: '#f6e58d' },
@@ -136,8 +136,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v6',
-    id: 'zomerify-colors-v6',
+    paletteName: 'Zomify Colors v6',
+    id: 'zomify-colors-v6',
     emoji: '😍',
     colors: [
       { name: 'ProtossPylon', color: '#00a8ff' },
@@ -163,8 +163,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v7',
-    id: 'zomerify-colors-v7',
+    paletteName: 'Zomify Colors v7',
+    id: 'zomify-colors-v7',
     emoji: '🎉',
     colors: [
       { name: 'JacksonsPurple', color: '#40407a' },
@@ -190,8 +190,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v8',
-    id: 'zomerify-colors-v8',
+    paletteName: 'Zomify Colors v8',
+    id: 'zomify-colors-v8',
     emoji: '📌',
     colors: [
       { name: 'OrchidOrange', color: '#FEA47F' },
@@ -217,8 +217,8 @@ export default [
     ],
   },
   {
-    paletteName: 'Zomerify Colors v9',
-    id: 'zomerify-colors-v9',
+    paletteName: 'Zomify Colors v9',
+    id: 'zomify-colors-v9',
     emoji: '🥨',
     colors: [
       { name: 'FlatFlesh', color: '#fad390' },
