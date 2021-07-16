@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import PaletteFormNav from './PaletteFormNav';
 import ColorPickerForm from './ColorPickerForm';
 import Drawer from '@material-ui/core/Drawer';
@@ -78,7 +78,7 @@ const useStyles = makeStyles(theme => ({
 
 const NewPaletteForm = ({ palettes, savePalette, history }) => {
   const classes = useStyles();
-  const theme = useTheme();
+  //const theme = useTheme();
   const [open, setOpen] = useState(true);
   const [colors, setColors] = useState(palettes[0].colors);
 
