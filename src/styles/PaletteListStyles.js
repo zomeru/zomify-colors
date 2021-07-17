@@ -1,3 +1,5 @@
+import sizes from './sizes';
+
 const styles = {
   root: {
     backgroundColor: '#4265CD',
@@ -7,13 +9,17 @@ const styles = {
     justifyContent: 'center',
   },
   container: {
-    width: '70%',
+    width: '60%',
     height: '80%',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
     marginBottom: '3rem',
+
+    [sizes.up('max')]: {
+      width: '1150px',
+    },
   },
   nav: {
     display: 'flex',
@@ -31,18 +37,43 @@ const styles = {
     boxSizing: 'border-box',
     width: '100%',
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 30%)',
+    gridTemplateColumns: 'repeat(3, 32%)',
     gridGap: '1.5rem',
+
+    [sizes.down('sm')]: {
+      gridTemplateColumns: 'repeat(2, 50%)',
+    },
+
+    [sizes.down('xs')]: {
+      gridTemplateColumns: 'repeat(1, 100%)',
+    },
+
+    [sizes.up('max')]: {
+      gridGap: '2.5rem',
+      gridTemplateColumns: 'repeat(3, 30%)',
+    },
   },
   createButton: {
     backgroundColor: 'rgba(255, 255, 255, 0.15)',
     padding: '2px 5px',
     borderRadius: '3px',
-    marginRight: '3rem',
+    //marginRight: '1.5rem',
 
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.4)',
       transition: 'all .3s',
+    },
+
+    [sizes.up('max')]: {
+      marginRight: '2.5rem',
+    },
+
+    [sizes.down('lg')]: {
+      marginRight: '-1.5rem',
+    },
+
+    [sizes.down('xs')]: {
+      marginRight: '0.5rem',
     },
   },
 };
