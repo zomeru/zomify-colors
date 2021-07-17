@@ -35,7 +35,7 @@ class Navbar extends Component {
     return (
       <header className={classes.Navbar}>
         <div className={classes.logo}>
-          <Link to='/'>Zomify</Link>
+          <Link to='/'>Zomify Colors</Link>
         </div>
         {showingAllColors && (
           <div>
