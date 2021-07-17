@@ -1,12 +1,16 @@
 import sizes from './sizes';
+import bg from '../assets/bg.svg';
+import bg2 from '../assets/bg2.svg';
 
 const styles = {
   root: {
-    backgroundColor: '#4265CD',
     height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
+    backgroundColor: '#4265cd',
+    backgroundImage: `url(${bg2})`,
+    backgroundSize: 'cover',
   },
   container: {
     width: '60%',
