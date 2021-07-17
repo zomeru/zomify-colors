@@ -35,7 +35,7 @@ const ColorPickerForm = ({ isPaletteFull, addNewColor }) => {
   //     colors.every(({ color }) => color !== currentColor);
   //   });
   // }, []);
-  //TODO! Make the validaiton form to work
+  //TODO! Make the validation form to work
 
   const updateColorHandler = newColor => {
     setCurrentColor(newColor.hex);

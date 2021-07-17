@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import PaletteMetaForm from './PaletteMetaForm';
+
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
+import PaletteMetaForm from './PaletteMetaForm';
 
 const drawerWidth = 300;
 
@@ -52,12 +53,22 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const PaletteFormNav = ({ open, handleDrawerOpen, handleSubmit }) => {
+const PaletteFormNav = ({
+  open,
+  handleDrawerOpen,
+  handleSubmit,
+  handleClickOpen,
+}) => {
   const classes = useStyles();
   const [formShowing, setFormShowing] = useState(false);
 
   const showForm = () => {
     setFormShowing(true);
+    console.log('Zomer');
+  };
+
+  const hideForm = () => {
+    setFormShowing(false);
   };
 
   return (
@@ -104,7 +115,9 @@ const PaletteFormNav = ({ open, handleDrawerOpen, handleSubmit }) => {
           </Button>
         </div>
       </AppBar>
-      {formShowing && <PaletteMetaForm handleSubmit={handleSubmit} />}
+      {formShowing && (
+        <PaletteMetaForm handleSubmit={handleSubmit} hideForm={hideForm} />
+      )}
     </div>
   );
 };
