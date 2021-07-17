@@ -24,6 +24,7 @@ class PaletteList extends Component {
           <div className={classes.palettes}>
             {palettes.map(palette => (
               <Link
+                key={palette.id}
                 to={`/palette/${palette.id}`}
                 style={{ textDecoration: 'none' }}
               >

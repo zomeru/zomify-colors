@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import chroma from 'chroma-js';
 
 const isDarkColor = props =>
@@ -10,7 +9,7 @@ const isLightColor = props =>
     ? 'rgb(51, 51, 51)'
     : 'rgb(209, 209, 209)';
 
-export default {
+const styles = {
   ColorBox: {
     width: '20%',
     height: props => (props.showingFullPalette ? '25%' : '50%'),
@@ -131,3 +130,5 @@ export default {
     },
   },
 };
+
+export default styles;

@@ -1,5 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
-export default {
+const styles = {
   Palette: {
     height: '100vh',
     display: 'flex',
@@ -41,3 +40,5 @@ export default {
     },
   },
 };
+
+export default styles;
