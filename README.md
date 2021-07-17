@@ -6,7 +6,7 @@ A Color Palette React App, inspired by [Flat UI Colors](https://flatuicolors.com
 
 ![Screenshot of Zomify Colors new palette form](https://raw.githubusercontent.com/zomeru/zoms-color-palette/main/src/assets/screenshots/Zomify-Colors-4.png?token=AEWG3TCVCIW7WYLYAHESWPDA7PWZE)
 
-![Screenshot of Zomify Colors palette page](https://raw.githubusercontent.com/zomeru/zoms-color-palette/main/src/assets/screenshots/Zomify-Colors-2.png?token=AEWG3TD3DCMKIWXM63CKSH3A7PW4QScreenshot_2019-08-19_React_Colours_1_waedxz.png)
+![Screenshot of Zomify Colors palette page](https://raw.githubusercontent.com/zomeru/zoms-color-palette/main/src/assets/screenshots/Zomify-Colors-2.png?token=AEWG3TD3DCMKIWXM63CKSH3A7PW4Q)
 
 ## Built with
 
