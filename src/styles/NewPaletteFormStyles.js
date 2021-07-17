@@ -5,10 +5,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
   },
-
-  hide: {
-    display: 'none',
-  },
   drawer: {
     width: DRAWER_WIDTH,
     flexShrink: 0,
@@ -25,11 +21,12 @@ const useStyles = makeStyles(theme => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    width: '100%',
   },
   content: {
     flexGrow: 1,
     height: 'calc(100vh - 6vh)',
-    padding: theme.spacing(3),
+    padding: theme.spacing(0),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
