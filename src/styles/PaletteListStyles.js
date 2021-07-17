@@ -1,5 +1,4 @@
 import sizes from './sizes';
-import bg from '../assets/bg.svg';
 import bg2 from '../assets/bg2.svg';
 
 const styles = {
