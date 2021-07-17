@@ -1,6 +1,6 @@
 const styles = {
   root: {
-    backgroundColor: '#25aaa3',
+    backgroundColor: '#4265CD',
     height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
