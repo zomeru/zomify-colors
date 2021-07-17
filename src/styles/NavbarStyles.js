@@ -1,4 +1,4 @@
-export default {
+const styles = {
   Navbar: {
     display: 'flex',
     alignItems: 'center',
@@ -53,3 +53,5 @@ export default {
     marginRight: '1rem',
   },
 };
+
+export default styles;
