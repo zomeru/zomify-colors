@@ -1,18 +1,19 @@
 import chroma from 'chroma-js';
+import sizes from './sizes';
 
-const isDarkColor = props =>
-  chroma(props.background).luminance() <= 0.15
+const isDarkColor = ({ background }) =>
+  chroma(background).luminance() <= 0.15
     ? 'rgb(209, 209, 209)'
     : 'rgb(51, 51, 51)';
-const isLightColor = props =>
-  chroma(props.background).luminance() >= 0.45
+const isLightColor = ({ background }) =>
+  chroma(background).luminance() >= 0.45
     ? 'rgb(51, 51, 51)'
     : 'rgb(209, 209, 209)';
 
 const styles = {
   ColorBox: {
     width: '20%',
-    height: props => (props.showingFullPalette ? '25%' : '50%'),
+    height: ({ showingFullPalette }) => (showingFullPalette ? '25%' : '50%'),
     margin: '0 auto',
     display: 'inline-block',
     position: 'relative',
@@ -21,6 +22,21 @@ const styles = {
 
     '&:hover button': {
       opacity: '1',
+    },
+
+    [sizes.down('lg')]: {
+      width: '25%',
+      height: ({ showingFullPalette }) => (showingFullPalette ? '20%' : '50%'),
+    },
+
+    [sizes.down('md')]: {
+      width: '50%',
+      height: ({ showingFullPalette }) => (showingFullPalette ? '10%' : '50%'),
+    },
+
+    [sizes.down('xs')]: {
+      width: '100%',
+      height: ({ showingFullPalette }) => (showingFullPalette ? '5%' : '10%'),
     },
   },
   colorName: {
