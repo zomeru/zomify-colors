@@ -82,6 +82,12 @@ const styles = {
       position: 'absolute',
     },
   },
+  showOverlay: {
+    opacity: '1',
+    transform: 'scale(50)',
+    zIndex: '10',
+    position: 'absolute',
+  },
   copyButton: {
     color: isLightColor,
     width: '100px',
@@ -103,7 +109,7 @@ const styles = {
     opacity: '0',
     cursor: 'pointer',
   },
-  copyMsg: {
+  copyMessage: {
     color: isDarkColor,
     position: 'fixed',
     left: '0',
@@ -139,6 +145,14 @@ const styles = {
       [sizes.down('xs')]: {
         fontSize: '6rem',
       },
+    },
+
+    showMessage: {
+      opacity: '1',
+      transform: 'scale(1)',
+      zIndex: '25',
+      transition: 'all 0.4s ease-in-out',
+      transitionDelay: '0.3s',
     },
 
     '& p': {
