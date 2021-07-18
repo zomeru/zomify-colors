@@ -1,8 +1,8 @@
 import React from 'react';
 import pure from 'recompose/pure';
-import styles from '../styles/MiniPaletteStyles';
-import { withStyles } from '@material-ui/styles';
 import DeleteIcon from '@material-ui/icons/Delete';
+import { withStyles } from '@material-ui/styles';
+import styles from '../styles/MiniPaletteStyles';
 
 const MiniPalette = ({
   classes,
@@ -30,8 +30,6 @@ const MiniPalette = ({
   const handleClick = () => {
     goToPalette(id);
   };
-
-  console.log('RENDERING', paletteName);
 
   return (
     <div className={classes.root} onClick={handleClick}>

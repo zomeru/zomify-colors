@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import PaletteFormNav from './PaletteFormNav';
 import ColorPickerForm from './ColorPickerForm';
+import DraggableColorList from './DraggableColorList';
 import Drawer from '@material-ui/core/Drawer';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Button from '@material-ui/core/Button';
-import DraggableColorList from './DraggableColorList';
 import { arrayMove } from 'react-sortable-hoc';
 import useStyles from '../styles/NewPaletteFormStyles';
 
@@ -35,7 +35,6 @@ const NewPaletteForm = ({ palettes, savePalette, history }) => {
   };
 
   const addRandomColor = () => {
-    //pick random color from existing palettes
     const allColors = palettes.map(p => p.colors).flat();
     console.log(allColors);
     let rand = Math.floor(Math.random() * allColors.length);
@@ -65,7 +64,6 @@ const NewPaletteForm = ({ palettes, savePalette, history }) => {
     <div className={classes.root}>
       <PaletteFormNav
         open={open}
-        //classes={classes}
         palettes={palettes}
         handleSubmit={handleSubmit}
         handleDrawerOpen={handleDrawerOpen}

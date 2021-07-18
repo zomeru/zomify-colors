@@ -6,8 +6,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
-import 'emoji-mart/css/emoji-mart.css';
 import { Picker } from 'emoji-mart';
+import 'emoji-mart/css/emoji-mart.css';
 
 const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
   const [stage, setStage] = useState('form');
@@ -29,7 +29,6 @@ const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
 
   const showEmojiPicker = () => {
     setStage('emoji');
-    console.log('ZOmer');
   };
 
   const savePalette = emoji => {
@@ -39,14 +38,6 @@ const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
     handleSubmit(newPalette);
     setStage('');
   };
-
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
-
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
 
   return (
     <div>
@@ -71,7 +62,6 @@ const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
               value={newPaletteName}
               name='newPaletteName'
               fullWidth
-              //margin='normal'
               onChange={newPaletteNameChangeHandler}
               // validators={['isPaletteNameUnique', 'required']}
               // errorMessages={[

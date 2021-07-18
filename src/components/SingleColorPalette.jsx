@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import PaletteFooter from './PaletteFooter';
 import ColorBox from './ColorBox';
-import styles from '../styles/PaletteStyles';
 import { withStyles } from '@material-ui/styles';
+import styles from '../styles/PaletteStyles';
 
 class SingleColorPalette extends Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class SingleColorPalette extends Component {
         allColors[key].filter(color => color.id === colorToFilterBy)
       );
     }
-    //return all shades of given color
     return shades.slice(1);
   }
 

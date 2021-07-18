@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
+const seedColors = [
   {
     paletteName: 'Zomify Colors',
     id: 'zomify-colors',
@@ -244,3 +243,5 @@ export default [
     ],
   },
 ];
+
+export default seedColors;
