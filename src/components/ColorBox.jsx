@@ -30,7 +30,7 @@ class ColorBox extends Component {
             className={`${classes.copyOverlay} ${copied && 'show'}`}
           />
           {/* {clsx(classes.copyOverlay, { [classes.showOverlay]: copied })} */}
-          <div className={`${classes.copyMsg} ${copied && 'show'}`}>
+          <div className={`${classes.copyMessage} ${copied && 'show'}`}>
             <h1>copied!</h1>
             <p className={classes.copyText}>{background}</p>
           </div>
