@@ -9,7 +9,7 @@ const MiniPalette = ({
   emoji,
   colors,
   handleClick,
-  handleDelete,
+  openDialog,
   id,
 }) => {
   const miniColorBoxes = colors.map(color => (
@@ -23,7 +23,7 @@ const MiniPalette = ({
   const deletePalette = event => {
     event.preventDefault();
     event.stopPropagation();
-    handleDelete(id);
+    openDialog(id);
   };
 
   return (
