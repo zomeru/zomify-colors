@@ -32,7 +32,6 @@ const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
   };
 
   const savePalette = emoji => {
-    console.log(emoji.native);
     const newPalette = { paletteName: newPaletteName, emoji: emoji.native };
     setStage('');
     handleSubmit(newPalette);

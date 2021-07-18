@@ -17,7 +17,6 @@ const PaletteFormNav = ({ open, handleDrawerOpen, handleSubmit }) => {
 
   const showForm = () => {
     setFormShowing(true);
-    console.log('Zomer');
   };
 
   const hideForm = () => {
