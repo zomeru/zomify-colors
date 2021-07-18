@@ -13,7 +13,7 @@ const styles = {
     },
   },
   root: {
-    height: '100%',
+    minHeight: '100vh',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
