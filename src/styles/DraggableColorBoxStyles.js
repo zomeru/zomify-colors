@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import sizes from './sizes';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(() => ({
   root: {
     width: '20%',
     height: '25%',
@@ -65,6 +65,6 @@ const useStyles = makeStyles({
     //   //marginTop: '5px',
     // },
   },
-});
+}));
 
 export default useStyles;

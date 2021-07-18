@@ -1,7 +1,8 @@
 import sizes from './sizes';
 import bg from '../assets/Confetti-Doodles.svg';
+import { makeStyles } from '@material-ui/core/styles';
 
-const styles = {
+const useStyles = makeStyles({
   '@global': {
     '.fade-exit': {
       opacity: '1',
@@ -89,6 +90,6 @@ const styles = {
       marginRight: '0.5rem',
     },
   },
-};
+});
 
-export default styles;
+export default useStyles;

@@ -1,6 +1,7 @@
 import sizes from './sizes';
+import { makeStyles } from '@material-ui/core/styles';
 
-const styles = {
+const useStyles = makeStyles(() => ({
   Navbar: {
     display: 'flex',
     alignItems: 'center',
@@ -71,6 +72,6 @@ const styles = {
     marginLeft: 'auto',
     marginRight: '1rem',
   },
-};
+}));
 
-export default styles;
+export default useStyles;

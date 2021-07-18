@@ -1,11 +1,9 @@
 import React from 'react';
 import pure from 'recompose/pure';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { withStyles } from '@material-ui/styles';
-import styles from '../styles/MiniPaletteStyles';
+import useStyles from '../styles/MiniPaletteStyles';
 
 const MiniPalette = ({
-  classes,
   paletteName,
   emoji,
   colors,
@@ -13,6 +11,8 @@ const MiniPalette = ({
   goToPalette,
   id,
 }) => {
+  const classes = useStyles();
+
   const miniColorBoxes = colors.map(color => (
     <div
       className={classes.miniColor}
@@ -48,4 +48,4 @@ const MiniPalette = ({
   );
 };
 
-export default withStyles(styles)(pure(MiniPalette));
+export default pure(MiniPalette);

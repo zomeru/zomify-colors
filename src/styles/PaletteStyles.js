@@ -1,6 +1,7 @@
 import sizes from './sizes';
+import { makeStyles } from '@material-ui/core/styles';
 
-const styles = {
+const useStyles = makeStyles(() => ({
   Palette: {
     height: '100vh',
     display: 'flex',
@@ -56,6 +57,6 @@ const styles = {
       height: '10%',
     },
   },
-};
+}));
 
-export default styles;
+export default useStyles;
