@@ -1,15 +1,25 @@
 import sizes from './sizes';
-import bg2 from '../assets/bg2.svg';
+import bg from '../assets/Confetti-Doodles.svg';
 
 const styles = {
+  '@global': {
+    '.fade-exit': {
+      opacity: '1',
+    },
+
+    '.fade-exit-active': {
+      opacity: '0',
+      transition: 'opacity 0.5s ease-out',
+    },
+  },
   root: {
     height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
     backgroundColor: '#4265cd',
-    backgroundImage: `url(${bg2})`,
-    backgroundSize: 'cover',
+    backgroundImage: `url(${bg})`,
+    //backgroundSize: 'cover',
   },
   container: {
     width: '60%',
