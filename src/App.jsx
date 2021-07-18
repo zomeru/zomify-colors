@@ -5,9 +5,9 @@ import Palette from './components/Palette';
 import PaletteList from './components/PaletteList';
 import SingleColorPalette from './components/SingleColorPalette';
 import NewPaletteForm from './components/NewPaletteForm';
-import Page from './components/Page';
 import seedColors from './configs/seedColors';
 import { generatePalette } from './helpers/colorHelpers';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -51,69 +51,69 @@ class App extends Component {
       <Route
         render={({ location }) => (
           <TransitionGroup>
-            <CSSTransition key={location.key} classNames='page' timeout={500}>
+            <CSSTransition key={location.key} classNames='fade' timeout={500}>
               <Switch location={location}>
                 <Route
                   exact
                   path='/palette/new'
                   render={routeProps => (
-                    <Page>
+                    <div>
                       <NewPaletteForm
                         savePalette={this.savePalette}
                         palettes={this.state.palettes}
                         {...routeProps}
                       />
-                    </Page>
+                    </div>
                   )}
                 />
                 <Route
                   path='/palette/:paletteId/:colorId'
                   render={routeProps => (
-                    <Page>
+                    <div>
                       <SingleColorPalette
                         colorId={routeProps.match.params.colorId}
                         palette={generatePalette(
                           this.findPalette(routeProps.match.params.paletteId)
                         )}
                       />
-                    </Page>
+                    </div>
                   )}
                 />
                 <Route
                   exact
                   path='/'
                   render={routeProps => (
-                    <Page>
+                    <div>
                       <PaletteList
                         palettes={this.state.palettes}
                         deletePalette={this.deletePalette}
                         {...routeProps}
                       />
-                    </Page>
+                    </div>
                   )}
                 />
                 <Route
                   exact
                   path='/palette/:id'
                   render={routeProps => (
-                    <Page>
+                    <div>
                       <Palette
                         palette={generatePalette(
                           this.findPalette(routeProps.match.params.id)
                         )}
                       />
-                    </Page>
+                    </div>
                   )}
                 />
                 <Route
                   render={routeProps => (
-                    <Page>
+                    <div>
                       <PaletteList
                         palettes={this.state.palettes}
                         deletePalette={this.deletePalette}
                         {...routeProps}
                       />
-                    </Page>
+                    </div>
                   )}
                 />
               </Switch>
