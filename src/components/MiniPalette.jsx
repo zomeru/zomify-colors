@@ -1,4 +1,5 @@
 import React from 'react';
+import pure from 'recompose/pure';
 import styles from '../styles/MiniPaletteStyles';
 import { withStyles } from '@material-ui/styles';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -8,8 +9,8 @@ const MiniPalette = ({
   paletteName,
   emoji,
   colors,
-  handleClick,
   openDialog,
+  goToPalette,
   id,
 }) => {
   const miniColorBoxes = colors.map(color => (
@@ -25,6 +26,12 @@ const MiniPalette = ({
     event.stopPropagation();
     openDialog(id);
   };
+
+  const handleClick = () => {
+    goToPalette(id);
+  };
+
+  console.log('RENDERING', paletteName);
 
   return (
     <div className={classes.root} onClick={handleClick}>
@@ -43,4 +50,4 @@ const MiniPalette = ({
   );
 };
 
-export default withStyles(styles)(MiniPalette);
+export default withStyles(styles)(pure(MiniPalette));
