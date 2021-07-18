@@ -51,7 +51,7 @@ const PaletteMetaForm = ({ handleSubmit, hideForm }) => {
         aria-labelledby='form-dialog-title'
       >
         <DialogTitle id='form-dialog-title'>Choose a Palette Name</DialogTitle>
-        <ValidatorForm onSubmit={showEmojiPicker}>
+        <ValidatorForm onSubmit={showEmojiPicker} instantValidate={false}>
           <DialogContent>
             <DialogContentText>
               Please enter a name for your new Palette.
