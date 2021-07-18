@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST}  !^www\.zomify-colors\.netlify.app$ [NC]
-RewriteRule ^(.*) http://www.zomify-colors.netlify.app/$1 [L,R]
